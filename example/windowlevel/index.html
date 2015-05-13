@@ -97,7 +97,9 @@
 
                 var viewport = cornerstone.getViewport(element);
                 viewport.voi.windowWidth += (deltaX / viewport.scale);
+                $('#ww').val(viewport.voi.windowWidth);
                 viewport.voi.windowCenter += (deltaY / viewport.scale);
+                $('#wc').val(viewport.voi.windowCenter);
                 cornerstone.setViewport(element, viewport);
             });
 
